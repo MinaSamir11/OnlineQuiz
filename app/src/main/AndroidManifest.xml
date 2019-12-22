@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fekrety.onlinequiz">
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.STORAGE" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+        <application
+            android:name=".UserClient"
+            android:allowBackup="true"
+            android:icon="@drawable/karammakram"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/ic_launcher_background"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:resizeableActivity="false">
+
+            <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts" />
+
+            <activity android:name=".ui.mediatorActivity"
+                android:theme="@style/Theme.Design.Light.NoActionBar"/>
+
+            <activity
+                android:name=".ui.units_explore"
+                android:theme="@style/AppTheme.NoActionBar" />
+
+            <activity android:name=".ui.Empty" />
+
+            <activity
+                android:name=".ui.MainQuiz"
+                android:theme="@style/AppTheme"
+                android:resizeableActivity="false">
+
+            </activity>
+
+            <activity android:name=".ui.Result_table" />
+
+            <activity android:name=".ui.Missin_Vision" />
+
+            <activity android:name=".ui.Login">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+
+            <activity
+                android:name=".ui.Drawablelist"
+                android:theme="@style/AppTheme"
+                android:launchMode="singleInstance"
+                android:screenOrientation="portrait" >
+
+            </activity>
+
+            <activity android:name=".ui.ChatroomActivity"
+                android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+                android:parentActivityName=".ui.Drawablelist" />
+
+            <activity android:name=".ui.ProfileActivity"/>
+
+        </application>
+
+    </manifest>

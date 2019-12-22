@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.Drawablelist"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0"
+                android:background="#3F51B5">
+
+                <ImageView
+                    android:id="@+id/dynami_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="0"
+                    android:scaleType="centerCrop"
+                    android:scaleX="1.1"
+                    android:scaleY="1.1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/dashboardtheme"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <at.grabner.circleprogress.CircleProgressView
+                        android:id="@+id/prograssbar"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="0"
+                        android:padding="5dp"
+                        android:soundEffectsEnabled="false"
+                        android:textAlignment="textEnd"
+                        android:textDirection="firstStrong"
+                        app:cpv_autoTextColor="false"
+                        app:cpv_autoTextSize="false"
+                        app:cpv_barColor="@color/design_default_color_primary"
+                        app:cpv_barStartEndLine="End"
+                        app:cpv_barStartEndLineColor="@color/sub_btn_background"
+                        app:cpv_barStartEndLineSweep="3"
+                        app:cpv_barStartEndLineWidth="11dp"
+                        app:cpv_barWidth="7dp"
+                        app:cpv_direction="CW"
+                        app:cpv_maxValue="100"
+                        app:cpv_maxValueAllowed="100"
+                        app:cpv_minValueAllowed="0"
+                        app:cpv_rimColor="@color/black"
+                        app:cpv_rimWidth="2dp"
+                        app:cpv_roundToWholeNumber="false"
+                        app:cpv_seekMode="false"
+                        app:cpv_showTextInSpinningMode="false"
+                        app:cpv_showUnit="false"
+                        app:cpv_spinColor="@color/colorPrimary"
+                        app:cpv_spinSpeed="0"
+                        app:cpv_startAngle="270"
+                        app:cpv_textMode="Text"
+                        app:cpv_textSize="30dp"
+                        app:cpv_value="75.4">
+
+
+                    </at.grabner.circleprogress.CircleProgressView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_weight="0"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:text="Year"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtv_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_weight="0"
+                            android:fontFamily="serif-monospace"
+                            android:lineSpacingExtra="18sp"
+                            android:text="2019/2020"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="0"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:lineSpacingExtra="18sp"
+                            android:text="Level"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtv_Level"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_weight="0"
+                            android:fontFamily="serif-monospace"
+                            android:lineSpacingExtra="8sp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:typeface="sans" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Txt_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="33dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="0"
+                        android:fontFamily="serif"
+                        android:text="Sunday "
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0"
+                        android:fontFamily="serif-monospace"
+                        android:shadowColor="@color/black"
+                        android:text="Your Class (1-3:PM)"
+                        android:textColor="@color/white"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="175dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/dashboardtheme">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/dashlocation"
+                        android:fontFamily="monospace"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:inputType="textMultiLine|textImeMultiLine"
+                        android:lineSpacingMultiplier="1.1"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="your location in "
+                        android:textAllCaps="true"
+                        android:textColor="@color/White"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/your_Class2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sniglet"
+                        android:gravity="center|center_horizontal|center_vertical"
+                        android:paddingStart="5dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="Hadeq Helwan"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </TableRow>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

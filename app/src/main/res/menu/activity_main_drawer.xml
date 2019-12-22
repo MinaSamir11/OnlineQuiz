@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Explore"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Explore" />
+        <item
+            android:id="@+id/quiz"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Start Quiz" />
+        <item
+            android:id="@+id/Results"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Results" />
+    </group>
+    <item android:title="About">
+        <menu>
+            <item
+                android:id="@+id/CV"
+                android:icon="@drawable/cv"
+                android:title="Curriculum Vitae" />
+            <item
+                android:id="@+id/Vision"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Our Vision and Mission" />
+        </menu>
+    </item>
+</menu>

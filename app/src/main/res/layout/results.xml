@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:theme="@style/AppTheme.NoActionBar.">
+
+    <ImageButton
+        android:id="@+id/bu_back"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="59dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/imagebutton"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+            </TableRow>
+
+            <TableLayout
+                android:id="@+id/table_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#DCD8DA">
+
+                <TableRow
+                    android:layout_marginBottom="12dp"
+                    android:background="#DCD8DA">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="center"
+                        android:text="Exam"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="23sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="center"
+                        android:text="Score"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="23sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="center"
+                        android:text="Status"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="23sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="center"
+                        android:text="Date"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="23sp"
+                        android:textStyle="bold|italic" />
+                </TableRow>
+
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

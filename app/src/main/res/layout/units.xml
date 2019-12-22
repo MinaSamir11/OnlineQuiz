@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/unit_descrpition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="Units"
+        android:textColor="#641A82"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Bu_ex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unit_descrpition"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:text="Exercise"
+        android:textColor="@color/White"
+        android:background="@drawable/custombutton"
+       android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/Bu_ass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombutton"
+        android:layout_below="@+id/unit_descrpition"
+        android:layout_alignParentLeft="false"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/White"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/Bu_ex"
+        android:text="Assignment"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/Bu_Book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unit_descrpition"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/White"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@+id/Bu_ass"
+        android:text="Book"
+        android:background="@drawable/custombutton"
+        android:textAllCaps="false" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/unit_descrpition"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/ColorT" />
+
+</RelativeLayout>

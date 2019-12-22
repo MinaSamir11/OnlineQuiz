@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Login"
+    android:background="#D2D1CE" android:theme="@style/AppTheme.NoActionBar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="0"
+                android:text="Enter your ID"
+                android:textColor="@android:color/black"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-medium" />
+
+            <MaterialEditText
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:accessibilityHeading="true"
+                android:hint="ID"
+                android:inputType="number"
+                android:maxLength="5"
+                android:numeric="integer"
+                android:password="false"
+                android:textAllCaps="false"
+                android:textColorHint="@color/black"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:floatingLabel="true"
+                app:maxCharacters="5" />
+
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="0"
+                android:paddingLeft="20dp"
+                android:text="Password"
+                android:textColor="@android:color/black"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-medium" />
+
+            <MaterialEditText
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:accessibilityHeading="true"
+                android:hint="Enter your Password"
+                android:inputType="numberPassword"
+                android:maxLength="8"
+                android:password="true"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="120dp">
+
+
+            <net.cryptobrewery.androidprocessingbutton.ProcessButton
+                android:id="@+id/failure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:addStatesFromChildren="true">
+
+            </net.cryptobrewery.androidprocessingbutton.ProcessButton>
+
+
+        </TableRow>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+
+    </LinearLayout>
+
+</RelativeLayout>

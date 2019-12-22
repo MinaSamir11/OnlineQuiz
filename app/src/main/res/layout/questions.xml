@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/abc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/h"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawHorizontalTrack="false"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="vertical"
+    app:layout_constraintVertical_weight="1"
+    android:theme="@style/AppTheme.NoActionBar">
+
+    <LinearLayout
+        android:id="@+id/layout_bu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bu_row2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"></LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="0"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:fontFamily="serif-monospace"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="15dp"
+                        android:textColor="@color/black"
+                        android:textColorLink="@color/colorAccent"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:typeface="normal" />
+                </TableRow>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/checkBox"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:fontFamily="@font/gabriela"
+                            android:onClick="cb1"
+                            android:paddingLeft="6dp"
+                            android:paddingBottom="12dp"
+                            android:text="Mr.Karam Makram"
+                            android:textColor="@color/black"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox2"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:fontFamily="@font/gabriela"
+                            android:paddingLeft="6dp"
+                            android:paddingBottom="12dp"
+                            android:text="Mr.Karam Makram"
+                            android:textColor="@color/black"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/checkBox3"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/gabriela"
+                            android:paddingLeft="6dp"
+                            android:paddingBottom="12dp"
+                            android:text="Mr.Karam Makram"
+                            android:textColor="@color/black"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/gabriela"
+                            android:paddingLeft="6dp"
+                            android:paddingBottom="12dp"
+                            android:text="Mr.Karam Makram"
+                            android:textColor="@color/black"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0">
+
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bigbutton"
+                        android:fontFamily="@font/ubuntu_medium_italic"
+                        android:gravity="center"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic"
+                        android:typeface="serif" />
+                </TableRow>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <com.spark.submitbutton.SubmitButton
+                        android:id="@+id/Finishquiz"
+                        android:layout_width="155dp"
+                        android:layout_height="97dp"
+                        android:layout_alignParentStart="true"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_marginStart="42dp"
+                        android:layout_marginEnd="40dp"
+                        android:enabled="true"
+                        android:foregroundGravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:saveEnabled="true"
+                        android:shadowRadius="10"
+                        android:text="Finish Quiz"
+                        android:textColor="@color/gray"
+                        android:visibility="invisible"
+                        app:progressStyle="loading"
+                        app:sub_btn_background="@color/white"
+                        app:sub_btn_duration="1800"
+                        app:sub_btn_line_color="@color/colorAccent"
+                        app:sub_btn_ripple_color="@color/colorPrimary"
+                        app:sub_btn_tick_color="@color/white" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
