@@ -20,7 +20,7 @@ public class ConnectDatabase {
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:jtds:sqlserver://SQL5041.site4now.net",
                     "DB_A49A16_minasamir11_admin",
-                    "M0126158953");
+                    "********");
 
         } catch (ClassNotFoundException e) {
             Handler handler = new Handler(Looper.getMainLooper());
